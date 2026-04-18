@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6D94C5;
+  --color-accent-tan: #E8DFCA;
+  --color-accent-blue: #CBDCEB;
+  --color-background: #F5EFE6;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-zinc-900 font-sans;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  .glass-dark {
+    @apply bg-black/10 backdrop-blur-md border border-white/10;
+  }
+}
